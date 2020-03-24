@@ -25,5 +25,18 @@ namespace Web_Api.Controllers
         {
             return _context.Empleados_Productos.ToList();
         }
+
+        [HttpGet("{id}")]
+        public ActionResult<Empleado_Producto> GetById(int id)
+        {
+            var item = _context.Empleados_Productos.Find(id);
+
+            if (item == null)
+            {
+                return NotFound();
+            }
+
+            return item;
+        }
     }
 }

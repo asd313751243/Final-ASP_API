@@ -25,5 +25,18 @@ namespace Web_Api.Controllers
         {
             return _context.Almacenes_Productos.ToList();
         }
+
+        [HttpGet("{id}")]
+        public ActionResult<Almacen_Producto> GetById(int id)
+        {
+            var item = _context.Almacenes_Productos.Find(id);
+
+            if (item == null)
+            {
+                return NotFound();
+            }
+
+            return item;
+        }
     }
 }

@@ -25,5 +25,18 @@ namespace Web_Api.Controllers
         {
             return _context.Sucursales.ToList();
         }
+
+        [HttpGet("{id}")]
+        public ActionResult<Sucursal> GetById(int id)
+        {
+            var item = _context.Sucursales.Find(id);
+
+            if (item == null)
+            {
+                return NotFound();
+            }
+
+            return item;
+        }
     }
 }
