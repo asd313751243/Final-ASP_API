@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Web_Api.Data;
+using Web_Api.Models;
 
 namespace Web_Api.Controllers
 {
@@ -17,6 +18,12 @@ namespace Web_Api.Controllers
         public SucursalController(FacturaContext context)
         {
             _context = context;
+        }
+
+        [HttpGet]
+        public ActionResult<IEnumerable<Sucursal>> Get()
+        {
+            return _context.Sucursales.ToList();
         }
     }
 }
