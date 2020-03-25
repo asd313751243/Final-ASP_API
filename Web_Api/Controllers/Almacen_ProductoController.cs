@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Web_Api.Data;
 using Web_Api.Models;
 
@@ -46,6 +47,20 @@ namespace Web_Api.Controllers
             _context.SaveChanges();
 
             return CreatedAtAction(nameof(GetById), new { id = item.Id }, item);
+        }
+
+        [HttpPut("{id}")]
+        public ActionResult<Almacen_Producto> Put(int id, Almacen_Producto item)
+        {
+            if(id != item.Id)
+            {
+                return BadRequest();
+            }
+
+            _context.Entry(item).State = EntityState.Modified;
+            _context.SaveChanges();
+
+            return NoContent();
         }
     }
 }
