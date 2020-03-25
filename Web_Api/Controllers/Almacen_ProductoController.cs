@@ -60,7 +60,23 @@ namespace Web_Api.Controllers
             _context.Entry(item).State = EntityState.Modified;
             _context.SaveChanges();
 
-            return NoContent();
+            return Ok();
+        }
+
+        [HttpDelete("{id}")]
+        public ActionResult<Almacen_Producto> Delete(int id)
+        {
+            var item = _context.Almacenes_Productos.Find(id);
+
+            if(item == null)
+            {
+                return NotFound();
+            }
+
+            _context.Almacenes_Productos.Remove(item);
+            _context.SaveChanges();
+
+            return Ok();
         }
     }
 }

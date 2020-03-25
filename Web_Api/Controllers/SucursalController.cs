@@ -62,5 +62,21 @@ namespace Web_Api.Controllers
 
             return Ok();
         }
+
+        [HttpDelete("{id}")]
+        public ActionResult<Sucursal> Delete(int id)
+        {
+            var item = _context.Sucursales.Find(id);
+
+            if (item == null)
+            {
+                return NotFound();
+            }
+
+            _context.Sucursales.Remove(item);
+            _context.SaveChanges();
+
+            return Ok();
+        }
     }
 }
