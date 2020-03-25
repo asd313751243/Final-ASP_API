@@ -38,5 +38,14 @@ namespace Web_Api.Controllers
 
             return item;
         }
+
+        [HttpPost]
+        public ActionResult<Producto> Post(Producto item)
+        {
+            _context.Productos.Add(item);
+            _context.SaveChanges();
+
+            return CreatedAtAction(nameof(GetById), new { id = item.Id }, item);
+        }
     }
 }

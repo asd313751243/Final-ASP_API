@@ -38,5 +38,14 @@ namespace Web_Api.Controllers
 
             return item;
         }
+
+        [HttpPost]
+        public ActionResult<Sucursal> Post(Sucursal item)
+        {
+            _context.Sucursales.Add(item);
+            _context.SaveChanges();
+
+            return CreatedAtAction(nameof(GetById), new { id = item.Id }, item);
+        }
     }
 }

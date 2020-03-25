@@ -38,5 +38,14 @@ namespace Web_Api.Controllers
 
             return item;
         }
+
+        [HttpPost]
+        public ActionResult<Almacen> Post(Almacen item)
+        {
+            _context.Almacenes.Add(item);
+            _context.SaveChanges();
+
+            return CreatedAtAction(nameof(GetById), new { id = item.Id }, item);
+        }
     }
 }

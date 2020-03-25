@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Web_Api.Data;
 
 namespace Web_Api.Migrations
 {
     [DbContext(typeof(FacturaContext))]
-    partial class FacturaContextModelSnapshot : ModelSnapshot
+    [Migration("20200325014643_int-string")]
+    partial class intstring
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -69,7 +71,7 @@ namespace Web_Api.Migrations
 
                     b.Property<int>("Id_Fk_Sucursal");
 
-                    b.Property<string>("Nombre_Empleado");
+                    b.Property<int>("Nombre_Empleado");
 
                     b.Property<string>("Sexo_Empleado");
 

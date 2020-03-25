@@ -8,8 +8,8 @@ namespace Web_Api.Models
     public class Empleado
     {
         public int Id { get; set; }
-        public int Nombre_Empleado { get; set; }
-        public int Sexo_Empleado { get; set; }
+        public string Nombre_Empleado { get; set; }
+        public string Sexo_Empleado { get; set; }
         public int Cedula_Empleado { get; set; }
         public DateTime Fecha_Nac_Empleado { get; set; }
         public int Telefono_Empleado { get; set; }
