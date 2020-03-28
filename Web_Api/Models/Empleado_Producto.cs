@@ -8,8 +8,8 @@ namespace Web_Api.Models
     public class Empleado_Producto
     {
         public int Id { get; set; }
-        public int Id_Empleado { get; set; }
-        public int Id_Producto { get; set; }
-        public DateTime Fecha_Empleado_Producto { get; set; }
+        public string Id_Empleado { get; set; }
+        public string Id_Producto { get; set; }
+        public string Cantidad_Empleado_Producto { get; set; }
     }
 }

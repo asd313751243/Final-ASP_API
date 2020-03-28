@@ -10,6 +10,6 @@ namespace Web_Api.Models
         public int Id { get; set; }
         public string Nombre_Sucursal { get; set; }
         public string Ciudad_Sucursal { get; set; }
-        public int Telefono_Sucursal { get; set; }
+        public string Telefono_Sucursal { get; set; }
     }
 }

@@ -10,11 +10,9 @@ namespace Web_Api.Models
         public int Id { get; set; }
         public string Nombre_Empleado { get; set; }
         public string Sexo_Empleado { get; set; }
-        public int Cedula_Empleado { get; set; }
-        public DateTime Fecha_Nac_Empleado { get; set; }
-        public int Telefono_Empleado { get; set; }
-        public string Usuario_Empleado { get; set; }
-        public string Contra_Empleado { get; set; }
-        public int Id_Fk_Sucursal { get; set; }
+        public string Cedula_Empleado { get; set; }
+        public string Fecha_Nac_Empleado { get; set; }
+        public string Telefono_Empleado { get; set; }
+        public string Id_Fk_Sucursal { get; set; }
     }
 }

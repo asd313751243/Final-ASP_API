@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3jILGF7vVEW8Fw5bVYRhRgAAAAACAAAAAAAQZgAAAAEAACAAAAB5zuXfj/gx/7fLgcEwpZqYhMATAUGG87RzWVamVDaBIAAAAAAOgAAAAAIAACAAAABlnQwk5pLEDqKbqLt+9fFuuIgiIMLtabbDwnbn/dGGwSAAAACBUOtQ+YB3gngnWDO3q4RM+xjaAl5J9X0HC/LxWHrjr0AAAAAWyAYEW2jvZYugInlNltqL1ewDGz+IyT/3jwG78hblLTFGeSUKSNlDn2BROq2Bj+7SCVpV/vxkM40vAYdUNnHe</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ConexionTest">
+      <Value>Data Source=SQL5052.site4now.net%3bInitial Catalog=DB_A56F1B_asd313751243%3bUser Id=DB_A56F1B_asd313751243_admin%3bPassword=wodaonimei123%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Web_Api.Data.FacturaContext">
+      <Value>Data Source=SQL5052.site4now.net%3bInitial Catalog=DB_A56F1B_asd313751243%3bUser Id=DB_A56F1B_asd313751243_admin%3bPassword=wodaonimei123%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

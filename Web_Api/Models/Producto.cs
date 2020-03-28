@@ -9,8 +9,7 @@ namespace Web_Api.Models
     {
         public int Id { get; set; }
         public string Nombre_Producto { get; set; }
-        public double Precio_Producto { get; set; }
-        public DateTime Fecha_Venc_Producto { get; set; }
-        public int Cantidad { get; set; }
+        public string Precio_Producto { get; set; }
+        public string Fecha_Venc_Producto { get; set; }
     }
 }

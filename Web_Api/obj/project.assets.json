@@ -12539,11 +12539,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ITLA\\ITLA\\5to cuatri\\Programacion III\\Trabajo Final\\Web_Api\\Web_Api\\Web_Api.csproj",
+      "projectUniqueName": "E:\\ITLA\\ITLA\\5to cuatri\\Programacion III\\Trabajo Final\\era_el_final\\Web_Api\\Web_Api\\Web_Api.csproj",
       "projectName": "Web_Api",
-      "projectPath": "E:\\ITLA\\ITLA\\5to cuatri\\Programacion III\\Trabajo Final\\Web_Api\\Web_Api\\Web_Api.csproj",
+      "projectPath": "E:\\ITLA\\ITLA\\5to cuatri\\Programacion III\\Trabajo Final\\era_el_final\\Web_Api\\Web_Api\\Web_Api.csproj",
       "packagesPath": "C:\\Users\\Carlos J\\.nuget\\packages\\",
-      "outputPath": "E:\\ITLA\\ITLA\\5to cuatri\\Programacion III\\Trabajo Final\\Web_Api\\Web_Api\\obj\\",
+      "outputPath": "E:\\ITLA\\ITLA\\5to cuatri\\Programacion III\\Trabajo Final\\era_el_final\\Web_Api\\Web_Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
